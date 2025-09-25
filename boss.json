@@ -1,0 +1,12 @@
+{
+	"name": "ErpAcademiaCodigo",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/baggio25/erpacademiacodigo": ">0.0.0",
+		"https://github.com/bittencourtthulio/router4delphi": "^1.1.3"
+	}
+}

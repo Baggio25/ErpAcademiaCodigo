@@ -1,0 +1,22 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2025-09-23T22:08:58.8955803-03:00",
+	"installedModules": {
+		"https://github.com/baggio25/erpacademiacodigo": {
+			"name": "erpacademiacodigo",
+			"version": "main",
+			"hash": "0abb202fd0545de54ef9f97b11a83ca0",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/bittencourtthulio/router4delphi": {
+			"name": "router4delphi",
+			"version": "1.1.3",
+			"hash": "6426f0309b0b76ec9942ae598d8fa7dd",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

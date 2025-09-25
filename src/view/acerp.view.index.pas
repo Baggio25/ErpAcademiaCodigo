@@ -4,10 +4,12 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts;
 
 type
-  TForm1 = class(TForm)
+  TPageIndex = class(TForm)
+    lytContainer: TLayout;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -15,10 +17,18 @@ type
   end;
 
 var
-  Form1: TForm1;
+  PageIndex: TPageIndex;
 
 implementation
 
+uses
+  Router4D, acerp.view.pages.layout;
+
 {$R *.fmx}
+
+procedure TPageIndex.FormCreate(Sender: TObject);
+begin
+  TRouter4D.Render<TPageLayout>.SetElement(lytContainer, lytContainer);
+end;
 
 end.
