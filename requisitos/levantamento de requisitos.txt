@@ -7,7 +7,7 @@ Cadastros
 	------
 	Configuração do Caixa
 
-Tebelas
+Tabelas
 	Uf
 	Cidade
 	-----

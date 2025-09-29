@@ -1,0 +1,113 @@
+object ComponentButtonMenu: TComponentButtonMenu
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object lytContainer: TLayout
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lytTop: TLayout
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytMenu: TLayout
+        Align = Client
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lytImageMenu: TLayout
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object ImageInfo: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Align = Client
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object lytImageInfo: TLayout
+          Align = Right
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 235.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ImageMenu: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Align = Client
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object lytDescricao: TLayout
+          Align = Client
+          Margins.Top = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 180.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lblDescricao: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 180.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 13.000000000000000000
+            Text = 'lblDescricao'
+            TabOrder = 0
+          end
+        end
+      end
+      object lytButton: TLayout
+        Align = Contents
+        HitTest = True
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnClick = lytButtonClick
+      end
+    end
+    object lytSubmenu: TLayout
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end
